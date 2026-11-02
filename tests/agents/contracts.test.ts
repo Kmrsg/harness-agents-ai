@@ -10,10 +10,7 @@ import { fixture } from '../support/workflow-fixture.ts';
 
 test('CLI result parser rejects technical failure and invalid model status', () => {
   assert.throws(() =>
-    parseAgentOutput(
-      JSON.stringify([{ type: 'result', subtype: 'error', is_error: true }]),
-      'cli',
-    ),
+    parseAgentOutput(JSON.stringify([{ type: 'result', subtype: 'error', is_error: true }]), 'cli'),
   );
   assert.throws(() => parseAgentOutput('{"status":"SUCCESS"}', 'protocol'));
   const result: AgentResult = {
