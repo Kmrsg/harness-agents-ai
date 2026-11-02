@@ -1,0 +1,15 @@
+{
+  "state": "OPEN",
+  "sourceCommit": "REMOTE",
+  "threads": [
+    {
+      "id": "thread-1",
+      "resolved": false,
+      "path": "src/example.ts",
+      "line": 10,
+      "comments": [
+        { "id": "comment-1", "author": "Reviewer", "body": "[fix] MOCK: обработайте ошибку сохранения", "own": false }
+      ]
+    }
+  ]
+}

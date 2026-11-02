@@ -1,0 +1,16 @@
+{
+  "runner": { "command": "llm-cli", "args": [] },
+  "runnerMode": "cli",
+  "timeoutMs": 600000,
+  "maxOutputBytes": 8000000,
+  "maxInputBytes": 4000000,
+  "runnerInput": "stdin",
+  "maxIterations": 3,
+  "maxReworkRetries": 2,
+  "git": { "enabled": true, "baseRef": "HEAD", "publish": false },
+  "checks": [
+    { "name": "Typecheck", "command": "npm", "args": ["run", "typecheck"] },
+    { "name": "Tests", "command": "npm", "args": ["test"] }
+  ],
+  "integrations": {}
+}

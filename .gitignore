@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tgz
+.harness/
+.env
+.env.*
+!.env.example
+.idea/
+*.tsbuildinfo
